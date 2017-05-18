@@ -43,7 +43,8 @@ cBoard.controller('categoryCtrl', function ($scope, $http, ModalUtils, $filter) 
     var validate = function () {
         $scope.alerts = [];
         if(!$scope.curCategory.name){
-            $scope.alerts = [{msg: translate('CONFIG.CATEGORY.NAME')+translate('COMMON.NOT_EMPTY'), type: 'danger'}];
+            $scope.alerts = [{msg: translate('CONFIG.CATEGORY.NAME')+translate('COMMON.' +
+                ''), type: 'danger'}];
             $scope.verify = {categoryName : false};
             $("#CategoryName").focus();
             return false;

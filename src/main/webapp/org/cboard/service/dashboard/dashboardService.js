@@ -4,8 +4,6 @@
 
 cBoard.service('dashboardService', function ($http) {
 
-    this.boardData;
-
     this.saveWidget = function (name, datasource, config) {
         var widget = {
             name: name,
